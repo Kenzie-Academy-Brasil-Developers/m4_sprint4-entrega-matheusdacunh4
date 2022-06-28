@@ -1,0 +1,26 @@
+services:
+  api:
+    container_name: apiRest
+    image: api_express
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - DB_USER=mathe
+      - DB_PASSWORD=77644Gg0
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB=products_management
+    depends_on:
+      - db
+  db:
+    container_name: banco
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=mathe
+      - POSTGRES_PASSWORD=77644Gg0
+      - POSTGRES_DB=products_management
+    volumes:
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
