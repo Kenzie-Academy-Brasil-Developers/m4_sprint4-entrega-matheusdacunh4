@@ -1,4 +1,4 @@
-import listCategoryDataService from "../services/categories/listCategoryData.service";
+import listCategoryDataService from "../../services/categories/listCategoryData.service";
 
 const listCategoryDataController = async (req, res) => {
   const { id } = req.params;

@@ -1,4 +1,4 @@
-import createProductsService from "../services/products/createProduct.service";
+import createProductsService from "../../services/products/createProduct.service";
 
 const createProductsController = async (req, res) => {
   const { name, price, category_id } = req.body;

@@ -1,4 +1,4 @@
-import updateProductService from "../services/products/updateProduct.service";
+import updateProductService from "../../services/products/updateProduct.service";
 
 const updateProductController = async (req, res) => {
   const { name, price, category_id } = req.body;

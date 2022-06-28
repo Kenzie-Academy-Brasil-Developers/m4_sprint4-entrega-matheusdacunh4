@@ -1,4 +1,4 @@
-import listProductsByCategoryService from "../services/products/listProductsByCategory.service";
+import listProductsByCategoryService from "../../services/products/listProductsByCategory.service";
 
 const listProductsByCategoryController = async (req, res) => {
   const { category_id } = req.params;

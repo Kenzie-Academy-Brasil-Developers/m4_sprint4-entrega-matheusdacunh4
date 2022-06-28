@@ -1,4 +1,4 @@
-import createCategoriesService from "../services/categories/createCategories.service";
+import createCategoriesService from "../../services/categories/createCategories.service";
 const createCategoriesController = async (req, res) => {
   const { name } = req.body;
   try {

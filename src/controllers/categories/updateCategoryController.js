@@ -1,4 +1,4 @@
-import updateCategoryService from "../services/categories/updateCategory.service";
+import updateCategoryService from "../../services/categories/updateCategory.service";
 
 const updateCategoryController = async (req, res) => {
   const { name } = req.body;

@@ -1,11 +1,11 @@
 import { Router } from "express";
 
-import createProductsController from "../controllers/createProducts.controller";
-import listProductsController from "../controllers/listProducts.controller";
-import listProductDataController from "../controllers/listProductData.controller";
-import updateProductController from "../controllers/updateProducts.controller";
-import listProductsByCategoryController from "../controllers/listProductsByCategory.controller";
-import deleteProductController from "../controllers/deleteProducts.controller";
+import createProductsController from "../controllers/products/createProducts.controller";
+import listProductsController from "../controllers/products/listProducts.controller";
+import listProductDataController from "../controllers/products/listProductData.controller";
+import updateProductController from "../controllers/products/updateProducts.controller";
+import listProductsByCategoryController from "../controllers/products/listProductsByCategory.controller";
+import deleteProductController from "../controllers/products/deleteProducts.controller";
 
 const router = Router();
 
